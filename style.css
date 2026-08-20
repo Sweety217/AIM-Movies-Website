@@ -1,0 +1,170 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+ }
+
+ :root {
+     --common-padding: 10px clamp(1.2rem, 1.8vw, 1.8rem);
+     --header-button: #E50914;
+     --text-primary: #FF0000;
+     --text-secondary: #FFD447;
+ }
+
+ html {
+     font-size: 62.5%;
+ }
+
+ li {
+     list-style: none;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ .headerContainer {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 10px;
+     padding: var(--common-padding);
+     background-color: #fceee8;
+ }
+
+ .logo-container {
+     width: 150px;
+     height: 80px;
+ }
+
+ .logo-container img {
+     width: 100%;
+     height: 100%;
+ }
+
+ nav {
+     display: flex;
+     align-items: center;
+     gap: 25px;
+ }
+
+ .nav-links {
+     display: flex;
+     align-items: center;
+     gap: 25px;
+ }
+
+ .nav-links a {
+     color: #333;
+     font-weight: 600;
+     font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+ }
+
+ .nav-links a.active {
+     color: #E50914;
+ }
+
+ .dropdownIcon {
+     width: clamp(0.8rem,1vw,1rem);
+     height: 10px;
+ }
+
+ .dropdownMenu{
+     position: relative;
+ }
+ .dropdown-Ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+    background-color: #ffff;
+    width: 160px;
+    padding: 10px;
+ }
+.dropdown-Ul li {
+    margin-top: 7px;
+ }
+.dropdown-Ul li a{
+    font-size: 1.4rem;
+    color: #E50914;
+ }
+.show {
+    display: block;
+}
+ .btn-quote {
+     background-color: var(--header-button);
+     color: #fff;
+     padding: clamp(0.8rem, 1vw, 1rem) clamp(1.5rem, 2vw, 2rem);
+     border: none;
+     cursor: pointer;
+     border-radius: 20px;
+     transition: background-color 0.3s;
+     font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+
+ }
+
+ .btn-quote:hover {
+     background-color: #c52912;
+ }
+
+ .heroImgContainer {
+    position: relative;
+    width: 100%;
+    height:300px;
+ }
+ .heroImg{
+    width: 100%;
+    height:100%;
+ }
+ .heroShadowImg{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height:100%;
+}
+.heroTextDiv{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+ .hero-title {
+     font-size: clamp(2rem, 5vw, 6rem);
+     font-weight:900;
+     color: var(--text-secondary);
+     margin-bottom: 15px;
+ }
+
+ .hero-subtitle {
+     font-size: clamp(1rem, 1.5vw, 1.5rem);
+     max-width: 600px;
+     font-weight: 600;
+     color: #CCCCCC;
+ }
+
+ @media (max-width: 700px) {
+     .logo-container {
+         width: 120px;
+         height: 60px;
+     }
+ }
+
+ @media (max-width: 580px) {
+     .logo-container {
+         width: 100px;
+         height: 50px;
+     }
+     .heroImgContainer {
+    height:250px;
+ }
+     .nav-links {
+         display: none;
+     }
+
+ }
