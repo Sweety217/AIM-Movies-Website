@@ -76,6 +76,7 @@
  .dropdown-Ul{
     display: none;
     position: absolute;
+    z-index: 100;
     top: 100%;
     left: 0;
     margin-top: 10px;
