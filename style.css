@@ -16,6 +16,7 @@
    --HeroPara-size: clamp(1.5rem, 2vw, 2.9rem);
    --Heading-size: clamp(2rem, 5vw, 9.1rem);
    --HeadingPara-size: clamp(1.2rem, 1.8vw, 2.6rem);
+   --serviceHeading-size: clamp(2.2rem,5vw,8rem)
  }
 
  html {
@@ -144,7 +145,6 @@
    position: relative;
    width: 100%;
    height: clamp(32rem, 40vw, 47rem);
-
 
  }
 
@@ -280,7 +280,7 @@
  }
 
  .missionCardOne {
-   width: clamp(26rem,45vw,76rem);
+   width: clamp(26rem, 45vw, 76rem);
    background-color: #363636;
    box-shadow: 0 24px 50px -20px rgba(20, 10, 0, 0.45);
    border-radius: 7px;
@@ -288,10 +288,10 @@
  }
 
  .missionCardTwo {
-   width: clamp(26rem,45vw,76rem);
-     align-self: self-end;
+   width: clamp(26rem, 45vw, 76rem);
+   align-self: self-end;
    background-color: #363636;
-      border-radius: 7px;
+   border-radius: 7px;
    box-shadow: 0 24px 50px -20px rgba(20, 10, 0, 0.45);
    border: 1px solid red;
    margin-top: 100px;
@@ -319,8 +319,8 @@
  }
 
  .missionIcon {
-   width: clamp(3rem,6vw,9.8rem);
-   height: clamp(3rem,6vw,9.2rem);
+   width: clamp(3rem, 6vw, 9.8rem);
+   height: clamp(3rem, 6vw, 9.2rem);
    border-radius: 8px;
    background: var(--accent);
    display: flex;
@@ -330,15 +330,16 @@
  }
 
  .missionIcon img {
-   width: clamp(2rem,4vw,6.8rem);
-   height: clamp(2rem,4vw,6.8rem);
+   width: clamp(2rem, 4vw, 6.8rem);
+   height: clamp(2rem, 4vw, 6.8rem);
  }
 
  .cardContent {
    padding: 30px;
  }
+
  .cardContent p {
-   font-size: clamp(1.3rem,1.8vw,2.2rem);
+   font-size: clamp(1.3rem, 1.8vw, 2.2rem);
    line-height: 1.90;
    font-weight: 400;
    color: rgba(255, 255, 255, 1);
@@ -362,46 +363,63 @@
    margin-bottom: 15px 0px;
  }
 
-   .slider-wrap {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    margin: 20px 0;
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-  }
-  .slider-track {
-    display: flex;
-    width: max-content;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-  .track-ltr {
-    animation-name: scroll-ltr;
-    animation-duration: 8s;
-  }
-  .track-rtl {
-    animation-name: scroll-rtl;
-    animation-duration: 8s;
-  }
-  /* left to right movement (content moves left->right visually) */
-  @keyframes scroll-ltr {
-    from { transform: translateX(-15%); }
-    to   { transform: translateX(0%); }
-  }
-  /* right to left movement */
-  @keyframes scroll-rtl {
-    from { transform: translateX(0%); }
-    to   { transform: translateX(-15%); }
-  }
-  .logo-card {
-    flex: 0 0 auto;
-    margin: 0 18px;
-    padding: 10px;
-  }
-  .paused .slider-track {
-    animation-play-state: paused;
-  }
+ .slider-wrap {
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   margin: 20px 0;
+   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+   mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+ }
+
+ .slider-track {
+   display: flex;
+   width: max-content;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+ }
+
+ .track-ltr {
+   animation-name: scroll-ltr;
+   animation-duration: 8s;
+ }
+
+ .track-rtl {
+   animation-name: scroll-rtl;
+   animation-duration: 8s;
+ }
+
+ /* left to right movement (content moves left->right visually) */
+ @keyframes scroll-ltr {
+   from {
+     transform: translateX(-15%);
+   }
+
+   to {
+     transform: translateX(0%);
+   }
+ }
+
+ /* right to left movement */
+ @keyframes scroll-rtl {
+   from {
+     transform: translateX(0%);
+   }
+
+   to {
+     transform: translateX(-15%);
+   }
+ }
+
+ .logo-card {
+   flex: 0 0 auto;
+   margin: 0 18px;
+   padding: 10px;
+ }
+
+ .paused .slider-track {
+   animation-play-state: paused;
+ }
 
  .stats-section {
    padding: 20px var(--common-padding);
@@ -414,9 +432,11 @@
    line-height: 1.05;
    font-weight: 700;
  }
- .stats-section h2 span{
-  color: var(--text-primary);
+
+ .stats-section h2 span {
+   color: var(--text-primary);
  }
+
  .stats-row {
    display: flex;
    justify-content: center;
@@ -445,7 +465,7 @@
  }
 
  .stat .label {
-  font-size: clamp(1.3rem,1.8vw,2rem);
+   font-size: clamp(1.3rem, 1.8vw, 2rem);
    color: #1c2a3a;
    font-weight: 500;
    position: relative;
@@ -466,6 +486,7 @@
 
  /* About Section Style Ends Here ..*/
  /* Service Section Style Start Here .. */
+
  .serviceSectionOne {
    display: flex;
    align-items: center;
@@ -477,13 +498,11 @@
  }
 
  .servicesText {
-   max-width: 500px;
-   width: 100%;
-   margin: auto;
+   width: 50%;
  }
 
  .servicesText h2 {
-   font-size: clamp(2.5rem, 5vw, 5rem);
+   font-size: clamp(2.5rem, 5vw, 9.1rem);
    line-height: 1;
    font-weight: 800;
    color: #000000;
@@ -503,8 +522,8 @@
  .btn {
    padding: clamp(1rem, 1.5vw, 1.5rem) clamp(2rem, 3vw, 3.5rem);
    border-radius: 25px;
-   font-weight: 700;
-   font-size: clamp(1rem, 1.5vw, 1.5rem);
+   font-weight: 800;
+   font-size: clamp(1.3rem, 1.6vw, 1.9rem);
    cursor: pointer;
    border: 2px solid var(--text-primary);
    transition: transform .15s ease, box-shadow .15s ease;
@@ -521,52 +540,50 @@
  }
 
  .servicesImage {
-   max-width: 500px;
-   width: 100%;
-   margin: auto;
+   width: 50%;
  }
 
  .servicesImageWrapper {
-   width: 100%;
-   height: 100%;
+   width: clamp(25rem, 40vw, 62.6rem);
+   height: clamp(20rem, 25vw, 35.2rem);
    margin: auto;
  }
 
- .servicesImageWrapper img {
+.servicesImageWrapper img {
    width: 100%;
    height: 100%;
-   border-radius: 30px;
+   border-radius: 20px;
  }
+
 
  .serviceSectionTwo {
    width: 100%;
    padding: var(--common-padding);
-
  }
 
  .serviceSectionTwo .heading {
    width: 100%;
    text-align: center;
-   margin-bottom: clamp(3rem, 5vw, 5rem);
+   margin-bottom: clamp(3.5rem, 6vw, 8rem);
 
  }
 
  .serviceSectionTwo h2 {
-   font-size: clamp(2rem, 5vw, 5rem);
-   font-weight: 800;
+   font-size: var(--serviceHeading-size);
+   font-weight: 900;
    color: var(--text-primary);
  }
 
  .serviceSectionTwo p {
-   font-size: clamp(1rem, 1.5vw, 1.5rem);
+   font-size: clamp(1.5rem,1.8vw,2.3rem);
    color: black;
  }
 
  .servicesCardWrapper {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
    gap: 25px;
-   max-width: 1100px;
+   max-width: 1400px;
    margin: 0px auto;
  }
 
@@ -576,8 +593,8 @@
 
  .icon-wrap {
    position: relative;
-   width: clamp(7rem, 10vw, 10rem);
-   height: clamp(7rem, 10vw, 10rem);
+   width: clamp(7rem, 10vw, 16.6rem);
+   height: clamp(7rem, 10vw, 16.6rem);
    margin: 0 auto 24px;
    border: 1.5px solid #d9d9d9;
    border-radius: 16px;
@@ -587,17 +604,17 @@
  }
 
  .icon-wrap img {
-   width: clamp(3rem, 4.6vw, 4.6rem);
-   height: clamp(3rem, 4.6vw, 4.6rem);
+   width: clamp(3.5rem, 5vw, 8.5rem);
+   height: clamp(4rem, 6.5vw, 10.4rem);
    cursor: pointer;
  }
 
  .iconNumber {
    position: absolute;
-   top: -12px;
-   right: -12px;
-   width: 28px;
-   height: 28px;
+   top: -18px;
+   right: -18px;
+   width: clamp(2.5rem, 3.5vw, 5.6rem);
+   height: clamp(2.5rem, 3.5vw, 5.6rem);
    background: black;
    color: #fff;
    border-radius: 50%;
@@ -609,15 +626,17 @@
  }
 
  .servicesCard span {
-   font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+   font-size: clamp(1.8rem, 2vw, 3rem);
    font-weight: 700;
  }
 
  .servicesCard p {
-   font-size: clamp(1rem, 1.5vw, 1.5rem);
+   font-size: clamp(1.4rem, 1.5vw, 1.8rem);
    color: rgb(45, 45, 45);
    margin-top: 15px;
  }
+
+
 
  .serviceSectionThree {
    width: 100%;
@@ -625,34 +644,30 @@
    margin: 35px 0px;
  }
 
+
  .serviceSectionThree h2 {
    text-align: center;
    color: var(--text-primary);
-   font-size: clamp(2.5rem, 5vw, 5rem);
+   font-size: var(--serviceHeading-size);
    font-weight: 800;
    margin-bottom: 25px;
  }
 
  .benefitCardWrappre {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
    gap: 25px;
-   max-width: 1200px;
-   width: 100%;
-   margin: 0 auto;
-   flex-wrap: wrap;
-   justify-content: center;
  }
 
  .benefitCard {
    display: flex;
    flex-direction: column;
-   background: #fff;
-   border: 1px solid transparent;
-   border-image: linear-gradient(to right, rgba(255, 23, 23, 1), rgba(255, 199, 199, 1)) 1;
-   padding: 28px 24px;
+   border: 2px solid transparent;
+   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(135deg, #FF1717, #FFC7C7) border-box;
+   padding: clamp(1.6rem,2vw,3rem);
    transition: border-color 0.3s ease, box-shadow 0.3s ease;
    cursor: pointer;
+   border-radius: 19px;
  }
 
  .benefitCard:hover {
@@ -661,8 +676,8 @@
  }
 
  .benefitIcon {
-   width: clamp(2.5rem, 3vw, 3rem);
-   height: clamp(2.5rem, 3vw, 3rem);
+   width: clamp(2.5rem, 3vw, 4.4rem);
+   height: clamp(2.5rem, 3vw, 4.4em);
    margin-bottom: 18px;
    transition: transform 0.3s ease;
  }
@@ -677,22 +692,22 @@
  }
 
  .benefitCard span {
-   font-size: clamp(1.2rem, 1.8vw, 1.8rem);
-   color: #1a1a2e;
+   font-size: clamp(1.6rem, 2vw, 2.8rem);
+   color: #000000;
+   font-weight: 600;
  }
 
  .benefitCard p {
-   font-size: clamp(1rem, 1.5vw, 1.5rem);
-   color: #6b6b76;
+   font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+   color: #6A6666;
    margin-top: 15px;
  }
+
 
  .serviceSectionFour {
    width: 100%;
    padding: var(--common-padding);
-   max-width: 1200px;
-   width: 100%;
-   margin: 30px auto;
+   margin: 30px 0px;
  }
 
  .serviceSectionFour h2 {
@@ -725,29 +740,29 @@
 
  .gallery-item.big:nth-child(1) {
    grid-column: span 6;
-   height: 280px;
+   height: clamp(25rem,35vw,48rem);
  }
 
  .gallery-item.big:nth-child(2) {
    grid-column: span 6;
-   height: 280px;
+   height: clamp(25rem,35vw,48rem);
  }
 
 
  .gallery-item.medium:nth-child(3) {
    grid-column: span 7;
-   height: 270px;
+   height: clamp(25rem,35vw,48rem);
  }
 
  .gallery-item.medium:nth-child(4) {
    grid-column: span 5;
-   height: 270px;
+   height: clamp(25rem,35vw,48rem);
  }
 
 
  .gallery-item.small {
    grid-column: span 4;
-   height: 250px;
+   height: clamp(25rem,35vw,48rem);
  }
 
 
@@ -891,8 +906,8 @@
  }
 
  .footer-col img {
-   width: clamp(10rem,15vw,19.2rem);
-   height: clamp(10rem,13vw,17rem);
+   width: clamp(10rem, 15vw, 19.2rem);
+   height: clamp(10rem, 13vw, 17rem);
  }
 
  .footer-col p {
@@ -910,8 +925,8 @@
  }
 
  .socialMediaIconDiv {
-   width: clamp(3rem,6vw,6.6rem);
-   height: clamp(3rem,6vw,6.6rem);
+   width: clamp(3rem, 6vw, 6.6rem);
+   height: clamp(3rem, 6vw, 6.6rem);
    border-radius: 100%;
    border: 1px solid black;
    cursor: pointer;
@@ -921,8 +936,8 @@
  }
 
  .socialMediaIconDiv .socialMediaIconImg {
-   width: clamp(1.2rem,2vw,2.5rem);
-   height: clamp(1.2rem,2vw,2.5rem);
+   width: clamp(1.2rem, 2vw, 2.5rem);
+   height: clamp(1.2rem, 2vw, 2.5rem);
  }
 
  .footer-col h4 {
@@ -987,11 +1002,12 @@
  }
 
  /* Footer Style Ends Here ..*/
-@media (max-width:950px) {
-  .missionWrapper{
-    flex-direction: column;
-  }
-}
+ @media (max-width:950px) {
+   .missionWrapper {
+     flex-direction: column;
+   }
+ }
+
  @media (max-width: 830px) {
    .nav-links {
      display: none;
@@ -1032,6 +1048,21 @@
    .founder {
      flex-direction: column;
    }
+   .serviceSectionOne{
+    flex-direction: column;
+   }
+   .servicesText{
+    width: 100%;
+    text-align: center;
+   }
+   .servicesImage{
+    width: 100%;
+    margin: auto;
+   }
+   .btn{
+    margin: auto;
+   }
+
  }
 
  @media (max-width: 700px) {
@@ -1092,6 +1123,5 @@
    .gallery-item.medium:nth-child(4),
    .gallery-item.small {
      grid-column: span 1;
-     height: 190px;
    }
  }

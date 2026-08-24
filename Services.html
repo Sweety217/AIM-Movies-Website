@@ -1,211 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="headerContainer">
+  <header class="headerContainer">
     <div class="logo-container">
-    <img src="./images/logoImg.png" alt="aim movies logo image">
+      <img src="./images/logoImg.png" alt="aim movies logo image">
     </div>
     <nav>
       <ul class="nav-links">
         <li><a href="/Home.html">Home</a></li>
-        <li><a href="/About.html">About Us</a></li>
-        <li class="dropdownMenu"><a href="/Services.html" class="active">Services
-        </a>
-        <img src="./images/dropDownIcon.png" alt="this is dropdown Icon image" class="dropdownIcon" onclick="toggleDropDown()">
-        <ul id="dropdownUl" class="dropdown-Ul">
-          <li><a href="#">Kiosk</a></li>
-          <li><a href="#">Standee</a></li>
-          <li><a href="#">Selfie Corner</a></li>
-          <li><a href="#">Wall Branding</a></li>
-          <li><a href="#">On Screen Ads</a></li>
-           <li><a href="#">Coupon Distribution</a></li>
-        </ul>
+        <li><a href="/About.html" class="active">About Us</a></li>
+        <li class="dropdownMenu"><a href="/Services.html">Services
+          </a>
+          <img src="./images/dropDownIcon.png" alt="this is dropdown Icon image" class="dropdownIcon"
+            onclick="toggleDropDown()">
+          <ul id="dropdownUl" class="dropdown-Ul">
+            <li><a href="#">Kiosk</a></li>
+            <li><a href="#">Standee</a></li>
+            <li><a href="#">Selfie Corner</a></li>
+            <li><a href="#">Wall Branding</a></li>
+            <li><a href="#">On Screen Ads</a></li>
+            <li><a href="#">Coupon Distribution</a></li>
+          </ul>
         </li>
         <li><a href="/Contact.html">Contact</a></li>
       </ul>
       <button class="btn-quote">Get Quote</button>
+      <div class="hamburgerIconWrapper">
+        <span class="material-symbols-outlined hamburgerIcon">
+          menu
+        </span>
+      </div>
     </nav>
   </header>
   <main>
     <section class="hero-section">
-    <div class="heroImgContainer">
-      <img src="./images/ServiceHeroImg.png" alt="this is hero image" class="heroImg">
-    <img src="./images/heroImgShadowImg.png" alt="this is hero shadow image" class="heroShadowImg">
-    <div class="heroTextDiv">
-      <h1 class="hero-title">Our Services</h1>
-     <p class="hero-subtitle">
-      From the big screen to the lobby, we offer a complete 360-degree cinema advertising experience.
-     </p>
-    </div>
-   </section>
-   <section class="serviceSectionOne">
-            <div class="servicesText">
-                <h2>Why on <br><span>Screen Ads</span></h2>
-                <div class="buttons">
-                    <button class="btn btn-solid">Search for movies</button>
-                    <button class="btn btn-outline">Talk to an expert</button>
-                </div>
-            </div>
-
-            <div class="servicesImage">
-                <div class="servicesImageWrapper">
-                    <img src="./images/image 6.png" alt="this is servise ads image">
-                </div>
-            </div>
+      <div class="heroImgContainer">
+        <img src="./images/ServiceHeroImg.png" alt="this is hero image" class="heroImg">
+        <img src="./images/heroImgShadowImg.png" alt="this is hero shadow image" class="heroShadowImg">
+        <div class="heroTextDiv">
+          <h1 class="hero-title">Our Services</h1>
+          <p class="hero-subtitle">
+            From the big screen to the lobby, we offer a complete 360-degree cinema advertising experience.
+          </p>
+        </div>
     </section>
-        <section class="serviceSectionTwo">
-            <div class="heading">
-                <h2>How it Works</h2>
-                <p>Launch your campaign in minutes, not days.</p>
-            </div>
-            <div class="servicesCardWrapper">
-                <div class="servicesCard">
-                    <div class="icon-wrap">
-                        <div class="iconNumber">1</div>
-                        <img src="./images/Group 125.png" alt="service icon">
-                    </div>
-                    <span>Select Location</span>
-                    <p>Choose your target region and city from our Pan-India network.</p>
-                </div>
+    <section class="serviceSectionOne">
+      <div class="servicesText">
+        <h2>Why on <br><span>Screen Ads</span></h2>
+        <div class="buttons">
+          <button class="btn btn-solid">Search for movies</button>
+          <button class="btn btn-outline">Talk to an expert</button>
+        </div>
+      </div>
 
-                <div class="servicesCard">
-                    <div class="icon-wrap">
-                        <div class="iconNumber">2</div>
-                        <img src="./images/Group (1).png" alt="service icon">
-                    </div>
-                    <span>Choose Cinema</span>
-                    <p>Pick specific cinema halls that align with your target audience.</p>
-                </div>
+      <div class="servicesImage">
+        <div class="servicesImageWrapper">
+          <img src="./images/image 6.png" alt="this is servise ads image">
+        </div>
+      </div>
+    </section>
+    <section class="serviceSectionTwo">
+      <div class="heading">
+        <h2>How it Works</h2>
+        <p>Launch your campaign in minutes, not days.</p>
+      </div>
+      <div class="servicesCardWrapper">
+        <div class="servicesCard">
+          <div class="icon-wrap">
+            <div class="iconNumber">1</div>
+            <img src="./images/Group 125.png" alt="service icon">
+          </div>
+          <span>Select Location</span>
+          <p>Choose your target region and city from our Pan-India network.</p>
+        </div>
 
-                <div class="servicesCard">
-                    <div class="icon-wrap">
-                        <div class="iconNumber">3</div>
-                       <img src="./images/Group (2).png" alt="service icon">
-                    </div>
-                    <span>Get Pricing</span>
-                    <p>Receive a transparent, high-ROI quote for your selected slots.</p>
-                </div>
+        <div class="servicesCard">
+          <div class="icon-wrap">
+            <div class="iconNumber">2</div>
+            <img src="./images/Group (1).png" alt="service icon">
+          </div>
+          <span>Choose Cinema</span>
+          <p>Pick specific cinema halls that align with your target audience.</p>
+        </div>
 
-                <div class="servicesCard">
-                    <div class="icon-wrap">
-                        <div class="iconNumber">4</div>
-                       <img src="./images/Vector (9).png" alt="">
-                    </div>
-                    <span>Launch Campaign</span>
-                    <p>Your brand goes live on the big screen. Watch your reach grow.</p>
-                </div>
+        <div class="servicesCard">
+          <div class="icon-wrap">
+            <div class="iconNumber">3</div>
+            <img src="./images/Group (2).png" alt="service icon">
+          </div>
+          <span>Get Pricing</span>
+          <p>Receive a transparent, high-ROI quote for your selected slots.</p>
+        </div>
 
-            </div>
-        </section>
-        <section class="serviceSectionThree">
-            <h2>Benefits</h2>
-            <div class="benefitCardWrappre">
+        <div class="servicesCard">
+          <div class="icon-wrap">
+            <div class="iconNumber">4</div>
+            <img src="./images/Vector (9).png" alt="">
+          </div>
+          <span>Launch Campaign</span>
+          <p>Your brand goes live on the big screen. Watch your reach grow.</p>
+        </div>
 
-                <div class="benefitCard">
-                    <div class="benefitIcon">
-                      <img src="./images/solar_eye-linear.png" alt="service icon">
-                    </div>
-                    <span>Massive Reach</span>
-                    <p>Your brand on the big screen with 100% focused audience attention.</p>
-                </div>
+      </div>
+    </section>
+    <section class="serviceSectionThree">
+      <h2>Benefits</h2>
+      <div class="benefitCardWrappre">
 
-                <div class="benefitCard">
-                    <div class="benefitIcon">
-                   <img src="./images/Vector (10).png" alt="service icon">
-                    </div>
-                    <span>High Engagement</span>
-                    <p>Reach specific demographics based on movie genres and locations.</p>
-                </div>
+        <div class="benefitCard">
+          <div class="benefitIcon">
+            <img src="./images/solar_eye-linear.png" alt="service icon">
+          </div>
+          <span>Massive Reach</span>
+          <p>Your brand on the big screen with 100% focused audience attention.</p>
+        </div>
 
-                <div class="benefitCard">
-                    <div class="benefitIcon">
-                   <img src="./images/Group (3).png" alt="service icon">
-                    </div>
-                    <span>Deep Analytics</span>
-                    <p>Premium branding at a fraction of the cost of traditional TV or Print ads.</p>
-                </div>
+        <div class="benefitCard">
+          <div class="benefitIcon">
+            <img src="./images/Vector (10).png" alt="service icon">
+          </div>
+          <span>High Engagement</span>
+          <p>Reach specific demographics based on movie genres and locations.</p>
+        </div>
 
-                <div class="benefitCard">
-                    <div class="benefitIcon">
-                  <img src="./images/tabler_world.png" alt="service icon">
-                    </div>
-                    <span>Proven ROI</span>
-                    <p>Scale your campaign across our Pan-India network of 500+ cinemas.</p>
-                </div>
+        <div class="benefitCard">
+          <div class="benefitIcon">
+            <img src="./images/Group (3).png" alt="service icon">
+          </div>
+          <span>Deep Analytics</span>
+          <p>Premium branding at a fraction of the cost of traditional TV or Print ads.</p>
+        </div>
 
-            </div>
-        </section>
-        <section class="serviceSectionFour">
-  <h2>Gallery</h2>
+        <div class="benefitCard">
+          <div class="benefitIcon">
+            <img src="./images/tabler_world.png" alt="service icon">
+          </div>
+          <span>Proven ROI</span>
+          <p>Scale your campaign across our Pan-India network of 500+ cinemas.</p>
+        </div>
 
-  <div class="gallery">
+      </div>
+    </section>
+    <section class="serviceSectionFour">
+      <h2>Gallery</h2>
+      <div class="gallery">
 
-    <!-- Row 1 -->
-    <div class="gallery-item big">
-      <img
-        src="./images/image 8.png"
-        alt="Cinema"
-      >
-    </div>
+        <!-- Row 1 -->
+        <div class="gallery-item big">
+          <img src="./images/image 8.png" alt="Cinema">
+        </div>
 
-    <div class="gallery-item big">
-      <img
-        src="./images/image 9.png"
-        alt="Cinema Hall"
-      >
-    </div>
+        <div class="gallery-item big">
+          <img src="./images/image 9.png" alt="Cinema Hall">
+        </div>
 
-    <!-- Row 2 -->
-    <div class="gallery-item medium">
-      <img
-        src="./images/image 15.png"
-        alt="Movie Theatre"
-      >
-    </div>
+        <!-- Row 2 -->
+        <div class="gallery-item medium">
+          <img src="./images/image 15.png" alt="Movie Theatre">
+        </div>
 
-    <div class="gallery-item medium">
-      <img
-        src="./images/image 12.png"
-        alt="Theatre"
-      >
-    </div>
+        <div class="gallery-item medium">
+          <img src="./images/image 12.png" alt="Theatre">
+        </div>
 
-    <!-- Row 3 -->
-    <div class="gallery-item small">
-      <img
-        src="./images/image 13.png"
-        alt="Movie Screen"
-      >
-    </div>
+        <!-- Row 3 -->
+        <div class="gallery-item small">
+          <img src="./images/image 13.png" alt="Movie Screen">
+        </div>
 
-    <div class="gallery-item small">
-      <img
-        src="./images/image 11.png"
-        alt="Cinema Seats"
-      >
-    </div>
+        <div class="gallery-item small">
+          <img src="./images/image 11.png" alt="Cinema Seats">
+        </div>
 
-    <div class="gallery-item small">
-      <img
-        src="./images/Frame 124.png"
-        alt="Cinema"
-      >
-    </div>
+        <div class="gallery-item small">
+          <img src="./images/Frame 124.png" alt="Cinema">
+        </div>
 
-  </div>
-</section>
+      </div>
+    </section>
   </main>
-   <footer class="footer">
+  <footer class="footer">
     <div class="footerWrapper">
       <div class="footer-col">
-       <img src="./images/logoImg.png" alt="">
-        <p>India's leading cinema advertising network. We help brands connect with engaged audiences through high-impact big screen visuals and interactive lobby branding.</p>
+        <img src="./images/logoImg.png" alt="">
+        <p>India's leading cinema advertising network. We help brands connect with engaged audiences through high-impact
+          big screen visuals and interactive lobby branding.</p>
         <div class="socialMediaIconWrap">
           <div class="socialMediaIconDiv">
             <img src="./images/Frame 163.png" alt="social media icon" class="socialMediaIconImg">
@@ -216,13 +203,13 @@
           <div class="socialMediaIconDiv">
             <img src="./images/mdi_instagram.png" alt="social media icon" class="socialMediaIconImg">
           </div>
-<div class="socialMediaIconDiv">
+          <div class="socialMediaIconDiv">
             <img src="./images/Vector (7).png" alt="social media icon" class="socialMediaIconImg">
           </div>
         </div>
       </div>
 
-      <div class="footer-col">
+        <div class="footer-col">
         <h4>Quick Links</h4>
         <ul>
           <li><a href="#">Home</a></li>
@@ -247,7 +234,8 @@
       <div class="footer-col">
         <h4>Contact Info</h4>
         <ul class="footer-contact">
-          <li><img src="./images/Vector (4).png" alt="call icon" class="footerIcon">123, Cinema Plaza, Film City, Mumbai - 400001</li>
+          <li><img src="./images/Vector (4).png" alt="call icon" class="footerIcon">123, Cinema Plaza, Film City, Mumbai
+            - 400001</li>
           <li><img src="./images/Vector (5).png" alt="call icon" class="footerIcon">1234567890</li>
           <li><img src="./images/Vector (6).png" alt="call icon" class="footerIcon">info@cineads.in</li>
         </ul>
@@ -262,5 +250,7 @@
       </div>
     </div>
   </footer>
+  <script src="index.js"></script>
 </body>
-</html>
+
+</html> 
