@@ -15,7 +15,7 @@
    --HeroTitle-size: clamp(4.5rem, 8vw, 12rem);
    --HeroPara-size: clamp(1.5rem, 2vw, 2.9rem);
    --Heading-size: clamp(2rem, 5vw, 9.1rem);
-   --HeadingPara-size: clamp(1.2rem, 1.8vw, 2.6rem);
+   --HeadingPara-size: clamp(1.4rem, 1.8vw, 2.6rem);
  }
 
  html {
@@ -269,7 +269,7 @@
  /* mission section start */
  .missionSection {
    padding: var(--common-padding);
-   margin: 100px 0px;
+   margin: clamp(2rem,5vw,10rem) 0px;
  }
 
  .missionWrapper {
@@ -280,41 +280,47 @@
  }
 
  .missionCardOne {
-   width: clamp(26rem,45vw,76rem);
-   background-color: #363636;
-   box-shadow: 0 24px 50px -20px rgba(20, 10, 0, 0.45);
-   border-radius: 7px;
    align-self: self-start;
+   position: relative;
  }
-
+.missionCardOne .missionCardOneImg{
+  width: 100%;
+  height: 100%;
+}
  .missionCardTwo {
-   width: clamp(26rem,45vw,76rem);
-     align-self: self-end;
-   background-color: #363636;
-      border-radius: 7px;
-   box-shadow: 0 24px 50px -20px rgba(20, 10, 0, 0.45);
-   border: 1px solid red;
-   margin-top: 100px;
+  position: relative;
+  align-self: self-end;
  }
 
  .cardHead {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  max-width: 70rem;
+  width: 100%;
+  padding: 5px 0px;
    display: flex;
    justify-content: space-between;
-   align-items: center;
-   gap: 20px;
-   padding: 20px;
-   border-top-left-radius: 7px;
-   border-top-right-radius: 7px;
-   background-color: #161616;
+  align-items: center;
  }
-
- .cardHead h3 {
+.missionCardTwoHead{
+  position: absolute;
+  top: 200px;
+  left: 70px;
+  max-width: 70rem;
+  width: 100%;
+  padding: 15px 0px;
+   display: flex;
+   justify-content: space-between;
+  align-items: center;
+}
+ .cardHead h3, .missionCardTwoHead h3{
    color: rgba(255, 255, 255, 1);
    font-size: clamp(1.6rem, 3vw, 5.4rem);
 
  }
 
- .cardHead h3 span {
+ .cardHead h3 span, .missionCardTwoHead h3 span {
    color: var(--text-secondary);
  }
 
@@ -335,20 +341,27 @@
  }
 
  .cardContent {
-   padding: 30px;
+  position: absolute;
+  bottom: 5%;
+  left: 25px;
+  padding: 0px 20px;
  }
- .cardContent p {
-   font-size: clamp(1.3rem,1.8vw,2.2rem);
+ .missionCardTwoContent{
+  position: absolute;
+  top: 300px;
+  left: 25px;
+  padding: 15px 35px;
+ }
+ .cardContent p, .missionCardTwoContent p {
+   font-size: clamp(1.4rem,1.8vw,2.2rem);
    line-height: 1.90;
    font-weight: 400;
    color: rgba(255, 255, 255, 1);
  }
 
- .cardContent strong {
+ .cardContent strong, .missionCardTwoContent strong {
    font-weight: 700;
  }
-
-
  .brandSection {
    margin: 25px 0px;
  }
@@ -991,6 +1004,14 @@
   .missionWrapper{
     flex-direction: column;
   }
+  .missionCardOne {
+   align-self: center;
+ }
+
+ .missionCardTwo {
+   align-self: center;
+   margin-top: 10px;
+ }
 }
  @media (max-width: 830px) {
    .nav-links {
@@ -1007,6 +1028,7 @@
  }
 
  @media (max-width: 768px) {
+ 
    .gallery {
      grid-template-columns: repeat(2, 1fr);
    }
@@ -1031,11 +1053,11 @@
    .aboutSectionTwo,
    .founder {
      flex-direction: column;
+     text-align: center;
    }
  }
 
  @media (max-width: 700px) {
-
    .serviceSectionOne {
      flex-wrap: wrap;
    }
@@ -1053,8 +1075,6 @@
      height: 40px;
      padding: 10px;
    }
-
-
    .footer-col img {
      width: 100px;
      height: 50px;
@@ -1069,19 +1089,14 @@
      width: 250px;
      height: 300px;
    }
-
-
-
    .socialMediaIconDiv {
      width: 30px;
      height: 30px;
    }
-
-
  }
 
  @media (max-width: 500px) {
-
+   
    .gallery {
      grid-template-columns: 1fr;
    }
