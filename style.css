@@ -1038,12 +1038,12 @@
    .gallery-item.medium:nth-child(3),
    .gallery-item.medium:nth-child(4) {
      grid-column: span 1;
-     height: 220px;
+   
    }
 
    .gallery-item.small {
      grid-column: span 1;
-     height: 190px;
+
    }
  }
 
