@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header class="headerContainer">
@@ -12,7 +14,7 @@
     <img src="./images/logoImg.png" alt="aim movies logo image">
     </div>
     <nav>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="/Home.html">Home</a></li>
         <li><a href="/About.html">About Us</a></li>
         <li class="dropdownMenu"><a href="/Services.html">Services
@@ -30,6 +32,11 @@
         <li><a href="/Contact.html" class="active">Contact</a></li>
       </ul>
       <button class="btn-quote">Get Quote</button>
+      <div id="hamburgerIcon" class="hamburgerIconWrapper">
+        <span class="material-symbols-outlined hamburgerIcon">
+          menu
+        </span>
+      </div>
     </nav>
   </header>
   <main>
@@ -38,7 +45,7 @@
       <img src="./images/ContactHeroImg.png" alt="this is hero image" class="heroImg">
     <img src="./images/heroImgShadowImg.png" alt="this is hero shadow image" class="heroShadowImg">
     <div class="heroTextDiv">
-      <h1 class="hero-title">Get In Touch</h1>
+      <h1 class="contactHeroTitle">Get In <span>Touch</span></h1>
      <p class="hero-subtitle">
 Ready to launch your campaign? Our experts are here to help you design the perfect cinema advertising strategy.
      </p>
@@ -54,7 +61,7 @@ Ready to launch your campaign? Our experts are here to help you design the perfe
       <p>+91 1234567890</p>
     </div>
    </div>
-   <div style="border: 1px solid rgb(117, 114, 114);"></div>
+   <div style="border: 1px solid rgb(117, 114, 114); width: 1px;"></div>
       <div class="contactDetailsWrap">
      <div class="contactDetailsIconDiv">
       <img src="./images/Vector (6).png" alt="call icon" class="contactIcon1">
@@ -64,7 +71,7 @@ Ready to launch your campaign? Our experts are here to help you design the perfe
       <p>www.adsinmovies.com</p>
     </div>
    </div>
-   <div style="border: 1px solid rgb(117, 114, 114);"></div>
+   <div style="border: 1px solid rgb(117, 114, 114); width: 1px;"></div>
       <div class="contactDetailsWrap">
      <div class="contactDetailsIconDiv">
       <img src="./images/Vector (4).png" alt="call icon" class="contactIcon1">
@@ -74,8 +81,6 @@ Ready to launch your campaign? Our experts are here to help you design the perfe
       <p>123 J.C Road, Mumbai</p>
     </div>
    </div>
-   <div style="border: 1px solid rgb(117, 114, 114);"></div>
-
    </section>
     <section class="contactFormDiv">
       <form class="contactForm">
@@ -101,12 +106,12 @@ Ready to launch your campaign? Our experts are here to help you design the perfe
       </div>
         <div style="display: flex; flex-direction: column; gap: 5px; width: 100%;">
           <label for="text" class="formLabels">Phone Numner</label>
-          <textarea style="height: 200px; resize: none;" class="formInput">Type here...</textarea>
+          <textarea style=" resize: none;" class="formTextArea">Type here...</textarea>
         </div>
     </form>
     </section>
     <button class="contactBtn">
-      <img src="./images/Vector (8).png" alt="" style="width: 15px; height: 15px;">
+      <img src="./images/Vector (8).png" alt="serviceIcon" class="serviceIcon">
       Send Message</button>
       <div class="mapImgDiv">
         <img src="./images/mapImg.jpg" alt="map image" class="mapImg">
@@ -173,5 +178,6 @@ Ready to launch your campaign? Our experts are here to help you design the perfe
       </div>
     </div>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>

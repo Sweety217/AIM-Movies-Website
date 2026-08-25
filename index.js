@@ -2,6 +2,12 @@ function toggleDropDown(){
     document.getElementById("dropdownUl").classList.toggle("show");
 }
 
+const hamburgerIcon = document.getElementById("hamburgerIcon");
+const navLinks = document.getElementById("navLinks");
+
+hamburgerIcon.addEventListener("click", ()=>{
+  navLinks.classList.toggle("openMenu");
+})
  const wrap1 = document.getElementById('wrap1');
   const wrap2 = document.getElementById('wrap2');
 
