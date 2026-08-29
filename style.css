@@ -145,17 +145,13 @@
 
  /* Home Section Style Start Here..*/
 
- /* .hero-content {
-  max-width: 690px;
-} */
-
 .hero{
   width: 100%;
   position: relative;
 }
 .hero img{
    width: 100%;
-    height: clamp(50rem,80vw,100rem);
+  height: clamp(50rem,80vw,100rem);
 }
 .hero-overlay {
   position: absolute;
@@ -269,10 +265,6 @@ margin-right: 6px;
   color: #000;
 }
 
-/* =========================
-   WHY CHOOSE SECTION
-========================= */
-
 .homeSectionOne{
   width: 100%;
    padding: var(--common-padding);
@@ -357,15 +349,11 @@ margin-right: 6px;
   transition: all 0.3s ease;
 }
 
-/* Arrow */
-
 .view-services img {
   width: clamp(1.2rem,1.6vw,1.9rem);
     height: clamp(1.2rem,1.6vw,1.9rem);
   transition: transform 0.3s ease;
 }
-
-/* Hover */
 
 .view-services:hover {
   color: #c90008;
@@ -380,26 +368,18 @@ margin-right: 6px;
   gap: 14px;
 }
 
-/* =========================
-   SERVICE CARD
-========================= */
-
 .service-card {
   background: rgba(25, 25, 25, 1);
   border-radius: 11px;
   padding: clamp(1.2rem,1.5vw,1.8rem);
   cursor: pointer;
- 
 }
 
 .service-image {
   width: 100%;
-  /* height: 100%; */
   overflow: hidden;
   border-radius: 19px;
 }
-
-/* Image */
 
 .service-image img {
   width: 100%;
@@ -444,15 +424,10 @@ margin-right: 6px;
   transition: all 0.3s ease;
 }
 
-/* Arrow */
-
 .explore-link i {
   font-size: 12px;
   transition: transform 0.3s ease;
 }
-
-/* Hover */
-
 .explore-link:hover {
   color: #ffffff;
 }
@@ -466,7 +441,6 @@ margin-right: 6px;
 .cta-section {
   width: 100%;
   padding: clamp(3rem,5vw,10rem) clamp(1rem,1.5vw,2rem);
-  /* Dotted background pattern */
   background-image: radial-gradient(
     rgba(229, 9, 20, 1) 0%,
      rgba(127, 5, 11, 1) 100%, 1.5px,
@@ -486,12 +460,10 @@ margin-right: 6px;
   font-size: clamp(1.4rem,2vw,3rem);
   color: rgba(184, 184, 184, 1);
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: clamp(2rem,3vw,4rem);
 }
 
-/* Buttons Container */
 .cta-buttons {
-  display: inline-block;
     margin-top: 20px;
 }
 
@@ -674,9 +646,6 @@ margin-right: 6px;
  .founder-image img {
    width: 100%;
    height: 100%;
-   border-radius: 50%;
-   border: 2px solid #d5a63a;
-   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
  }
 
  /* mission section start */
@@ -693,8 +662,7 @@ margin-right: 6px;
   justify-content: space-between;
   gap: 50px;
   position: relative;
-  z-index: 1;
-  margin: 100px 0px;
+  margin: clamp(4rem,6vw,10rem) 0px;
 }
 /* Card Wrapper & Hanging Rod */
 .mv-card-wrapperOne {
@@ -702,30 +670,25 @@ margin-right: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  z-index: 1;
+  
 }
 .mv-card-wrapperTwo {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: end;
-  position: relative;
-  z-index: 1;
   margin-top: 100px;
 }
 .missionBorderDiv {
     position: absolute;
-    bottom: 5px;
-    left: 0;
-    width: 100%;
+    top: -10;
+    left: -10;
+    width: 91%;
     height: 905px;
     z-index: 10;
     pointer-events: none;
 }
 
 .missionBorderDiv .missionBorder {
-    display: block;
     width: 100%;
     height: 100%;
 }
@@ -735,7 +698,6 @@ margin-right: 6px;
   background-color: rgba(54, 54, 54, 1);
   color: #f2f2f2;
   border-radius: 4px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 /* Card Header Styles */
@@ -758,7 +720,6 @@ margin-right: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
 }
 .icon-box-card img{
   width: clamp(2rem,3vw,5.8rem);
@@ -771,17 +732,12 @@ margin-right: 6px;
 .card-header h3 span{
   color: rgba(255, 177, 0, 1);
 }
-/* Card Body Typography */
 .card-body p {
   font-size: clamp(1.4rem, 1.8vw, 2.2rem);
-   line-height: 1.90;
+   line-height: 144%;
    font-weight: 400;
    color: rgba(255, 255, 255, 1);
    padding: 15px;
-}
-
-.card-body p:last-child {
-  margin-bottom: 0;
 }
 
 .card-body strong {
@@ -798,11 +754,9 @@ margin-right: 6px;
     gap: 20px;
   }
 .mv-card-wrapperOne {
-  
   margin-top: 10px;
 }
 .mv-card-wrapperTwo {
-  
   margin-top: 50px;
 }
   .mv-card-wrapper {
@@ -812,13 +766,11 @@ margin-right: 6px;
     display: none;
   }
 }
- 
-
  .trusted-section {
   width: 100%;
   padding: var(--common-padding);
   text-align: center;
-  margin: 5rem 0px;
+  margin: clamp(1.5rem,3vw,5rem) 0px;
 }
 
 /* Title */
@@ -847,7 +799,8 @@ margin-right: 6px;
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 120px;
+  width:clamp(7rem,6vw,6rem);
+  height: clamp(7rem,6vw,6rem);
   z-index: 2;
   pointer-events: none;
 }
@@ -863,7 +816,7 @@ margin-right: 6px;
 /* Tracks */
 .slider-track {
   display: flex;
-  gap: 30px;
+  gap: 10px;
   width: max-content;
   align-items: center;
 }
@@ -879,21 +832,19 @@ margin-right: 6px;
 
 /* Individual Slide Card Style */
 .slide {
-  width: 200px;
-  height: 100px;
+  width: clamp(10rem,18vw,20rem);
+  height: clamp(6rem,8vw,10rem);
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ffffff;
-  border: 1px solid #f0f0f0;
   border-radius: 12px;
   padding: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
 }
 
 .slide img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -920,7 +871,7 @@ margin-right: 6px;
  .stats-section {
    padding: 20px var(--common-padding);
    text-align: center;
-   margin: 35px 0px;
+   margin: clamp(2rem,3vw,3.5rem) 0px;
  }
 
  .stats-section h2 {
@@ -936,9 +887,9 @@ margin-right: 6px;
  .stats-row {
    display: flex;
    justify-content: center;
-   gap: 40px;
+   gap: clamp(2.5rem,3vw,4rem);
    flex-wrap: wrap;
-   margin: 25px 0px;
+   margin: clamp(2rem,2vw,2.5rem) 0px;
  }
 
  .stat {
@@ -989,7 +940,7 @@ margin-right: 6px;
    gap: 20px;
    padding: var(--common-padding);
    width: 100%;
-   margin: 30px 0px;
+   margin: clamp(1.8rem,2vw,3rem) 0px;
  }
 
  .servicesText {
@@ -1317,7 +1268,6 @@ margin-right: 6px;
  }
 
  .contactFormDiv {
-   padding: var(--common-padding);
    width: 100%;
  }
 
@@ -1560,7 +1510,7 @@ margin-right: 6px;
     left: 0;
     z-index: 20;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       background-color: rgba(255, 255, 255, 0.719);
       display: flex;
       flex-direction: column;
@@ -1633,11 +1583,6 @@ margin-right: 6px;
      flex-wrap: wrap;
    }
 
-   .marquee-track img {
-     width: 8rem;
-     height: 5rem;
-     margin-left: 60px;
-   }
  }
 
  @media (max-width: 580px) {
@@ -1689,5 +1634,4 @@ margin-right: 6px;
    .gallery-item.small {
      grid-column: span 1;
    }
-   
  }
