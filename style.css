@@ -740,27 +740,6 @@ margin-right: 6px;
   font-weight: 600;
 }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-  .mv-container {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-.mv-card-wrapperOne {
-  margin-top: 10px;
-}
-.mv-card-wrapperTwo {
-  margin-top: 50px;
-}
-  .mv-card-wrapper {
-    width: 100%;
-  }
-  .missionBorderDiv{
-    display: none;
-  }
-}
  .trusted-section {
   width: 100%;
   padding: var(--common-padding);
@@ -1222,6 +1201,7 @@ margin-right: 6px;
 }
 .subPageLinkText a:hover{
   color: #000;
+  transform: translateX(10px);
 }
 .subPageLinkText img{
   width: clamp(1.5rem,2.5vw,3rem);
@@ -1376,7 +1356,89 @@ margin-right: 6px;
 .servicesSubCard:hover .subArrowIcon{
   transform: translateX(10px);
 }
-
+.ServiceSubPageDetailsBtn{
+  margin-top: clamp(2rem,3vw,4rem);
+  display: flex;
+  gap: 15px;
+}
+.SubPageDetailsBtn1{
+  padding: clamp(1rem, 1.5vw, 1.5rem) clamp(2rem, 3vw, 3.5rem);
+   border-radius: 63px;
+   font-weight: 800;
+   font-size: clamp(1.3rem, 1.6vw, 1.9rem);
+   cursor: pointer;
+   background-color:  var(--text-primary);
+   border: none;
+   color: rgba(255, 255, 255, 1);
+   transition: transform .15s ease, box-shadow .15s ease;
+}
+.SubPageDetailsBtn1:hover{
+  border: 2px solid var(--text-primary);
+  background-color: rgb(183, 12, 12);
+}
+.blackBtn{
+  background-color: transparent;
+   border: 3px solid rgba(0, 0, 0, 1);
+   color: rgba(0, 0, 0, 1);
+   border-radius: 50px;
+}
+.blackBtn:hover{
+  background-color: #D4AF37;
+    border: 3px solid rgba(0, 0, 0, 1);
+}
+.subBenefitsContainer{
+  width: 100%;
+  padding: var(--common-padding);
+  margin: clamp(2rem,4vw,8rem) 0px;
+}
+.subBenefitsWrapper{
+  max-width: 1150px;
+   margin: 0px auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap: 25px;
+}
+.subBenefitsCard{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border: 1px solid #000000;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+}
+.benefitsIconWrapper{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.benefitsIconWrapper img{
+  width: clamp(2rem,3.5vw,5rem);
+  height: clamp(2rem,3.5vw,5rem);
+}
+.benefitsIconWrapper span{
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: clamp(1.8rem,3vw,4.6rem);
+}
+.benefitsTextWrapper{
+  padding-left: clamp(0.5rem,1vw,2rem);
+}
+.benefitsText{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+   margin-bottom: clamp(0.6rem,1vw,1.5rem);
+}
+.benefitsText img{
+  width: clamp(1rem,1.5vw,1.7rem);
+  height: clamp(1rem,1.2vw,1.5rem);
+}
+.benefitsText span{
+  font-weight: 600;
+  font-size: clamp(1.6rem,2vw,2.4rem);
+  color: var(--text-primary);
+}
 /*Service Sub Pages Style End Here....*/
 
  /* Contact Section Style Start Here .. */
@@ -1542,7 +1604,7 @@ margin-right: 6px;
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
    gap: 20px;
-
+   align-items: center;
  }
 
  .footer-col img {
@@ -1642,6 +1704,26 @@ margin-right: 6px;
  }
 
  /* Footer Style Ends Here ..*/
+ @media (max-width: 992px) {
+  .mv-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+.mv-card-wrapperOne {
+  margin-top: 10px;
+}
+.mv-card-wrapperTwo {
+  margin-top: 50px;
+}
+  .mv-card-wrapper {
+    width: 100%;
+  }
+  .missionBorderDiv{
+    display: none;
+  }
+}
  @media (max-width:950px) {
    .missionWrapper {
      flex-direction: column;
@@ -1698,7 +1780,9 @@ margin-right: 6px;
    .serviceSectionOne {
      flex-direction: column;
    }
-
+   .ServiceSubPageDetailsBtn{
+    justify-content: center;
+   }
    .servicesText {
      width: 100%;
      text-align: center;
@@ -1712,7 +1796,6 @@ margin-right: 6px;
    .btn {
      margin: auto;
    }
-
  }
 
  @media (max-width: 768px) {
@@ -1779,6 +1862,9 @@ margin-right: 6px;
  }
 
  @media (max-width: 500px) {
+     .ServiceSubPageDetailsBtn{
+      flex-direction: column;
+     }
   .cta-buttons {
   display: flex;
   flex-direction: column;
